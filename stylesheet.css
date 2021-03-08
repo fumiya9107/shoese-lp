@@ -1,0 +1,552 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*header*/
+body{
+  width:100%;
+  margin:0 auto;
+}
+
+header{
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+        padding-bottom: 10px;
+    }
+
+header #menubtn {
+        position: absolute;
+        display:block;
+        width:13px;
+        height:13px;
+        top:12px;
+        right:5%;
+        transform: translate(-10%, 0);
+        box-sizing:content-box !important;
+        padding:10px;
+        z-index:111;
+    }
+    header #menubtn,
+    header #menubtn span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+
+    header #menubtn span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #222222;
+    }
+    header #menubtn span:nth-of-type(1) {
+        top: 6px;
+    }
+    header #menubtn span:nth-of-type(2) {
+        top: 15px;
+    }
+    header #menubtn span:nth-of-type(3) {
+        bottom: 6px;
+    }
+
+    header #menubtn.active span:nth-of-type(1) {
+        -webkit-transform: translateY(9px) rotate(-45deg);
+        transform: translateY(9px) rotate(-45deg);
+        background-color: #fff;
+    }
+
+    header #menubtn.active span:nth-of-type(2) {
+        opacity: 0;
+        background-color: #fff;
+    }
+
+    header #menubtn.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-9px) rotate(45deg);
+        transform: translateY(-9px) rotate(45deg);
+        background-color: #fff;
+    }
+
+    header nav{
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        top: -10px;
+        left: 0;
+        background: rgba(0,0,0,0.85);
+        z-index: 10;
+        padding: 0;
+        box-sizing: border-box;
+        transition: all 0.8s ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+    header nav.active{
+        max-height: 600px;
+        padding: 100px 0 0px;
+        margin-top: -90px;
+    }
+    header nav #headernav{
+        padding: 40px 0px 20px;
+        text-align: center;
+    }
+    header .header-top ul{
+        text-align: center;
+        padding: 0px 0px 40px;
+    }
+    header nav ul li{
+        height: 40px;
+    }
+    .rotate .fa-arrow-circle-down{
+        transform: rotate(180deg);
+    }
+
+    .forsp h1{
+      padding:20px 25px;
+      font-size:2rem;
+      }
+
+    .menuitem a{
+      color:white;
+    }
+
+    /*main*/
+    video{
+      width:100%;
+
+    }
+    .pickup{
+    	width:400px;
+    	margin:0 auto;
+    }
+
+    .pickup h1{
+      text-align: center;
+      padding:100px 0;
+      font-size: 2.0rem;
+    }
+
+    ul li img{
+      width:100%;
+    }
+
+    #slide{
+    	position:relative;
+    	overflow:hidden;
+    	height:400px;
+    }
+
+    #slide ul{
+    	position:absolute;
+      width:1200px;
+    }
+
+    #slide li{
+    	float:left;
+    	width:400px;
+    	list-style-type:none;
+    }
+
+    button{
+    	opacity:.6;
+    	transition:opacity .2s;
+    	border:none;
+    	background:none;
+    }
+
+    button:focus{
+    	outline:none;
+    }
+
+    button:hover{
+    	opacity:1;
+    }
+
+    #prevBtn{
+    	position:absolute;
+    	top:120px;
+    	left:20px;
+    }
+
+    #nextBtn{
+    	position:absolute;
+    	top:120px;
+    	right:20px;
+    }
+
+    .container{
+      width:100%;
+      margin:0 auto;
+    }
+    .container h1{
+      text-align: center;
+      font-size: 2.0rem;
+      padding:100px 0;
+    }
+
+    .container_contents{
+      margin-bottom: 100px;
+    }
+
+    .fadein {
+      opacity : 0;
+      transform : translate(0, 100px);
+      transition : all 1s;
+      }
+
+      .fadein.active{
+        opacity : 1;
+        transform : translate(0, 0);
+      }
+
+      .container_visual_contents{
+        box-shadow: 0 0 8px gray;
+        margin: 0 20px 30px 20px;
+
+      }
+
+      .container_visual_contents h3{
+        font-weight: normal;
+        padding:30px 0 30px 20px;
+      }
+
+      .text{
+        padding-left: 20px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        font-weight: bold;
+        font-size: 1.0rem;
+      }
+
+      .day{
+        text-align: right;
+        padding:0 20px 30px 0;
+      }
+
+      .image-wrap{
+        text-align: center;
+      }
+
+      .image-wrap img{
+        width:100%;
+      }
+
+      .contact{
+        background-color: black;
+      }
+
+      .contact h1{
+        color:white;
+        text-align: center;
+        font-size: 2.0rem;
+        padding: 100px 0;
+
+      }
+
+      .contact_visual_contents{
+        margin: 0 20px;
+      }
+
+      .contact_visual_contents p{
+        color:white
+
+      }
+
+      .text1{
+        padding-bottom: 20px;
+      }
+
+      .text2{
+        padding-bottom: 20px;
+      }
+
+      .text3{
+        padding-bottom: 20px;
+      }
+
+
+      label{
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color:white;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea{
+        border:1px solid black;
+        padding:10px;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"]{
+
+        width: 100%;
+
+      }
+
+      textarea{
+        margin-bottom: 30px;
+        width: 100%;
+        height:100px;
+      }
+
+      input[type="submit"]{
+        width: 100%;
+        font-size: 1.0rem;
+        background-color: black;
+        border:1px solid white;
+        color:white;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      footer{
+        background-color: black;
+        padding:50px 0 10px 0;
+      }
+
+      .footer_contents p{
+        text-align: center;
+        font-size: 0.8rem;
+        color:white;
+      }
+    a{
+      text-decoration: none;
+    }
+
+    @media(min-width:768px){
+
+
+      .container_contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact_contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      label{
+        margin-top: 0;
+      }
+    }
+
+    @media(min-width:1200px){
+      .container_contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+    }
