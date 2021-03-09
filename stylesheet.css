@@ -525,12 +525,10 @@ header #menubtn {
       text-decoration: none;
     }
 
-    @media(min-width:768px){
-
-
+    @media(min-width:1200px){
       .container_contents{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
       .contact_contents{
@@ -540,13 +538,6 @@ header #menubtn {
 
       label{
         margin-top: 0;
-      }
-    }
-
-    @media(min-width:1200px){
-      .container_contents{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
       }
 
     }
